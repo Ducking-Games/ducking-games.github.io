@@ -68,12 +68,15 @@
       .image-container {
           width: 100%;
           max-width: 800px;
+          height: 300px; /* Adjust this value based on your needs */
           margin: 0 auto 30px;
+          overflow: hidden; /* This ensures the image doesn't spill out */
       }
       .image-container img {
           width: 100%;
-          height: auto;
-          display: block;
+          height: 100%;
+          object-fit: cover; /* This maintains aspect ratio while filling the container */
+          object-position: center; /* This centers the image within the container */
       }
       .signup-form {
           background-color: #1a1a1a;
