@@ -5,117 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ducking Games - Coming Soon</title>
     <style>
-        /* Reset and base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #b0b0b0;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+      /* Reset and base styles */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #000;
+          color: #b0b0b0;
+          line-height: 1.6;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+      }
+      .container {
+          width: 90%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+      }
 
-        /* Header styles */
-        header {
-            padding: 20px 0;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ff4136;
-        }
+      /* Header styles */
+      header {
+          padding: 20px 0;
+      }
+      .logo {
+          font-size: 24px;
+          font-weight: bold;
+          color: #ff4136;
+      }
 
-        /* Main content styles */
-        main {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            padding: 40px 0;
-        }
-        h1 {
-            font-size: 48px;
-            color: #ff4136;
-            margin-bottom: 20px;
-        }
-        @media (min-width: 768px) {
-            h1 {
-                font-size: 64px;
-            }
-        }
-        p {
-            font-size: 18px;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-        .image-placeholder {
-            width: 100%;
-            max-width: 800px;
-            height: 300px;
-            margin: 0 auto 30px;
-            background-color: #111;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            color: #666;
-        }
-        .signup-form {
-            background-color: #1a1a1a;
-            padding: 30px;
-            border-radius: 8px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .signup-form h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-        .signup-form p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-        .signup-form input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #333;
-            background-color: #222;
-            color: #fff;
-        }
-        .signup-form button {
-            width: 100%;
-            padding: 10px;
-            background-color: #ff4136;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .signup-form button:hover {
-            background-color: #e63a2e;
-        }
+      /* Main content styles */
+      main {
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          padding: 40px 0;
+      }
+      h1 {
+          font-size: 36px;
+          color: #ff4136;
+          margin-bottom: 20px;
+      }
+      @media (min-width: 768px) {
+          h1 {
+              font-size: 48px;
+          }
+      }
+      p {
+          font-size: 16px;
+          max-width: 600px;
+          margin: 0 auto 30px;
+      }
+      @media (min-width: 768px) {
+          p {
+              font-size: 18px;
+          }
+      }
+      .image-container {
+          width: 100%;
+          max-width: 800px;
+          margin: 0 auto 30px;
+      }
+      .image-container img {
+          width: 100%;
+          height: auto;
+          display: block;
+      }
+      .signup-form {
+          background-color: #1a1a1a;
+          padding: 20px;
+          border-radius: 8px;
+          max-width: 400px;
+          margin: 0 auto;
+      }
+      @media (min-width: 768px) {
+          .signup-form {
+              padding: 30px;
+          }
+      }
+      .signup-form h2 {
+          font-size: 24px;
+          margin-bottom: 15px;
+      }
+      .signup-form p {
+          font-size: 14px;
+          margin-bottom: 20px;
+      }
+      @media (min-width: 768px) {
+          .signup-form p {
+              font-size: 16px;
+          }
+      }
+      .signup-form input[type="email"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #333;
+          background-color: #222;
+          color: #fff;
+      }
+      .signup-form button {
+          width: 100%;
+          padding: 10px;
+          background-color: #ff4136;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+      .signup-form button:hover {
+          background-color: #e63a2e;
+      }
 
-        /* Footer styles */
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 14px;
-            color: #666;
-        }
-    </style>
+      /* Footer styles */
+      footer {
+          text-align: center;
+          padding: 20px 0;
+          font-size: 14px;
+          color: #666;
+      }
+  </style>
 </head>
 <body>
     <header>
