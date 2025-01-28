@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducking Games - Coming Soon</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #b0b0b0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            padding: 20px 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff4136;
+        }
+
+        /* Main content styles */
+        main {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1 {
+            font-size: 48px;
+            color: #ff4136;
+            margin-bottom: 20px;
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 64px;
+            }
+        }
+        p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .image-placeholder {
+            width: 100%;
+            max-width: 800px;
+            height: 300px;
+            margin: 0 auto 30px;
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #666;
+        }
+        .signup-form {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .signup-form h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .signup-form p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .signup-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #333;
+            background-color: #222;
+            color: #fff;
+        }
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff4136;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .signup-form button:hover {
+            background-color: #e63a2e;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">DUCKING GAMES</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>A New Era of Indie Gaming</h1>
+            <p style="font-size:14px;">Ducking Game Studios is an independent game development studio dedicated to crafting unique, immersive experiences that push the boundaries of creativity and storytelling. Founded by a group of passionate developers, artists, and storytellers, we aim to create games that resonate deeply with players and spark new ways of thinking about interactive entertainment.
+              Our team thrives on experimentation, embracing unconventional ideas and unconventional design to build worlds that surprise and captivate. We focus on delivering engaging gameplay, memorable characters, and fresh ideas for great games. Join us on our journey to bringing some awesome games to reality and stay tuned for updates!</p>
+            
+            <div class="image-placeholder"><img src="./dgs_alpha.png" /></div>
+            
+            <div class="signup-form">
+                <h2>Coming Soon</h2>
+                <!-- <p>Be the first to know when we launch. Sign up for exclusive updates and early access.</p> -->
+                <!-- <form id="email-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Notify Me</button>
+                </form> -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ducking Games. All rights reserved. Embrace the chaos.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('email-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the email to your server or a service like Mailchimp
+            alert('Thank you for signing up! We\'ll keep you posted.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
